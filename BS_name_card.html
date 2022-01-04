@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/bootstrap.css">
+</head>
+<style>
+  .container {
+    height: 100vh;
+  }
+
+  .cornerLB {
+    background: linear-gradient(45deg, rgb(255, 255, 255)50%, rgba(255, 255, 255, 0)50%);
+    filter: drop-shadow(5px -5px 3px rgba(0, 0, 0, 0.15));
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: -5%;
+    bottom: -7%;
+    z-index: 99;
+  }
+
+  .cornerRT {
+    background: linear-gradient(-135deg, rgb(255, 255, 255)50%, rgba(255, 255, 255, 0)50%);
+    filter: drop-shadow(-5px 5px 3px rgba(0, 0, 0, 0.15));
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: -7%;
+    right: -5%;
+    z-index: 99;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+</style>
+
+<body>
+  <div class="container d-flex justify-content-center align-items-center">
+    <div class="card shadow" style="max-width: 800px;">
+      <div class="cornerLB d-none d-md-block "></div>
+      <div class="cornerRT d-none d-md-block"></div>
+      <div class="row m-0 m-md-0">
+        <div class="col-md-4 bg-success bg-opacity-50 p-5 d-flex align-items-center">
+          <img src="./images/cat.png" class="col img-fluid" style="max-width: 100%;" alt="CAT">
+        </div>
+        <div class="col-md-8 p-5 p-md-5">
+          <div class="card-body">
+            <h5 class="card-title">Front-End Designer</h5>
+            <h1 class="card-title">YiChen Shih</h1>
+            <h5 class="card-title">泰 &emsp; 山 &emsp; 職 &emsp; 訓 &emsp; 局</h5>
+            <br>
+            <br>
+            <p class="card-text">
+              住址：新北市泰山區貴子里致遠新村55之1號<br>
+              電話：02-2901-8274<br>
+              E-MAIL：daixii83@gmail.com<br>
+              網站：http://www.yichen.example.cc/
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
